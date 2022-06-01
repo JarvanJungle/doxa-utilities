@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: connex-conf
+  namespace: stag
+data:
+  API_URL: https://api-connex-stag.doxa-holdings.com
+  AUTH_HOST: https://auth-stag.doxa-holdings.com
+  AUTH_SOURCE: admin
+  AWS_ACCESS_KEY: AKIA25RUNUFBLRMMDYEA
+  DB_HOST: connex-stag.cojg9fsf8ai4.ap-southeast-1.rds.amazonaws.com
+  DB_PORT: "5432"
+  DB_USER: doxaadmin
+  DEFAULT_CLIENT_ID: 6a9b4a56-a375-4343-aa69-b78fc93bd3fe
+  DEFAULT_PAGE_SIZE: "1000"
+  DEFAULT_REDIRECT_URL: https://connex-stag.doxa-holdings.com/sso_redirect
+  DEFAULT_UPLOAD_SIZE: "1000"
+  EMAIL_HYPERLINK_HOST: https://connex-stag.doxa-holdings.com
+  ENV: DEV
+  FILE_SIZE_THRESHOLD: 20MB
+  ISSUER: http://oauth-service
+  JWKS_URI: http://oauth-service/jwks
+  MAX_FILE_SIZE: 20MB
+  MAX_REQUEST_SIZE: 25MB
+  MONGODB_HOST: mongodb://mongodb.stagging.svc.cluster.local
+  MONGODB_OPTIONS: ?retryWrites=false
+  MONGODB_PORT: "27017"
+  MONGODB_USER: root
+  MS_TEAMS_WEBHOOK_URL: https://doxahi.webhook.office.com/webhookb2/8e4d5b35-bbce-4626-ab93-54a2f6a18f5a@7e62cb42-2f83-4a2c-b061-b40fcf5e97b0/IncomingWebhook/7e7304cd0dfe49159e8c83d89260b697/42a98973-eea5-4345-9355-014be2e083e7
+  RABBIT_HOSTNAME: b-87a4d3f0-63d4-4a65-b4b3-b26c6f897194.mq.ap-southeast-1.amazonaws.com
+  RABBIT_PORT: "5671"
+  RABBITMQ_PASSWORD: feHj1ezou3GrsU1tSdfkn
+  RABBITMQ_USERNAME: doxa-admin
+  REDIS_HOST: redis-master.redis.svc.cluster.local
+  REDIS_PORT: "6379"
+  S3_BUCKET_NAME: doxa-connect2-stag
+  SPRING_PROFILES_ACTIVE: kubernetes-stag
+  VHOST: stag

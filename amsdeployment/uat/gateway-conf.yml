@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-conf
+  namespace: uat
+data:
+  CLIENT_ID: 6a9b4a56-a375-4343-aa69-b78fc93bd3fe
+  CLIENT_SECRET: "123"
+  REDIRECT_URL: https://connex-uat-ams.doxa-holdings.com/sso_redirect
+  USER_AUTHORIZATION_URL: https://auth-uat-ams.doxa-holdings.com/authorize

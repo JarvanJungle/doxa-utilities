@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: connex-conf
+  namespace: uat
+data:
+  API_URL: https://api-connex-uat-ams.doxa-holdings.com
+  AUTH_HOST: https://auth-uat-ams.doxa-holdings.com
+  AUTH_SOURCE: ""
+  AWS_ACCESS_KEY: AKIAY2LKEEXIWTSUOCPW
+  DB_HOST: connex2-uat-cluster.cluster-cxirwkaj8ncy.ap-southeast-1.rds.amazonaws.com
+  DB_PORT: "5432"
+  DB_USER: dbadmin
+  DEFAULT_CLIENT_ID: 6a9b4a56-a375-4343-aa69-b78fc93bd3fe
+  DEFAULT_PAGE_SIZE: "5000"
+  DEFAULT_REDIRECT_URL: https://connex-uat-ams.doxa-holdings.com/sso_redirect
+  DEFAULT_UPLOAD_SIZE: "1000"
+  EMAIL_HYPERLINK_HOST: https://connex-uat-ams.doxa-holdings.com
+  ENV: DEV
+  FILE_SIZE_THRESHOLD: 20MB
+  ISSUER: http://oauth-service
+  JWKS_URI: http://oauth-service/jwks
+  MAX_FILE_SIZE: 20MB
+  MAX_REQUEST_SIZE: 25MB
+  MONGODB_HOST: mongodb://mongodb-uat.cluster-cxirwkaj8ncy.ap-southeast-1.docdb.amazonaws.com
+  MONGODB_OPTIONS: ?retryWrites=false
+  MONGODB_PORT: "27017"
+  MONGODB_USER: doxaadmin
+  MS_TEAMS_WEBHOOK_URL: https://doxahi.webhook.office.com/webhookb2/8e4d5b35-bbce-4626-ab93-54a2f6a18f5a@7e62cb42-2f83-4a2c-b061-b40fcf5e97b0/IncomingWebhook/7e7304cd0dfe49159e8c83d89260b697/42a98973-eea5-4345-9355-014be2e083e7
+  RABBIT_HOSTNAME: b-78d24a34-3670-4ec0-b094-d7bc1cb40d1e.mq.ap-southeast-1.amazonaws.com
+  RABBIT_PORT: "5671"
+  RABBITMQ_PASSWORD: '!JV2ZKsY%XUC'
+  RABBITMQ_USERNAME: doxaconnex
+  REDIS_HOST: my-release-redis-master.uat.svc.cluster.local
+  REDIS_PORT: "6379"
+  S3_BUCKET_NAME: doxa-connex2-ams-uat
+  SPRING_PROFILES_ACTIVE: kubernetes
+  VHOST: uat
